@@ -8,9 +8,6 @@ import yfinance as yf
 app = FastAPI()
 origins = ["*"]
 
-port = int(os.environ.get("PORT", 5000))
-
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
