@@ -1,20 +1,9 @@
 import pandas as pd
-from datetime import datetime
-import matplotlib.pyplot as plt
-from fastapi import FastAPI, Depends, Request, Body
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from mangum import Mangum
-import mysql.connector
-import mysql.connector.pooling
-from pydantic import BaseModel
 import requests
-from bs4 import BeautifulSoup
 import os
-import json
 import yfinance as yf
-from yahooquery import Ticker
-import openai
-
 
 app = FastAPI()
 origins = ["*"]
